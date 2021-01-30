@@ -11,7 +11,8 @@ namespace IdentityServer4.IDP
     {
         public static IEnumerable<IdentityResource> IdentityResources =>
             new IdentityResource[]
-            { 
+            {
+                new IdentityResources.Profile(),
                 new IdentityResources.OpenId()
             };
 
@@ -22,5 +23,10 @@ namespace IdentityServer4.IDP
         public static IEnumerable<Client> Clients =>
             new Client[] 
             { };
+
+        public static IEnumerable<ApiResource> ApiResources =>
+            new ApiResource[]
+            { };
+
     }
 }
