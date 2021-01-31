@@ -22,7 +22,22 @@ namespace IdentityServer4.IDP
 
         public static IEnumerable<Client> Clients =>
             new Client[] 
-            { };
+            {
+                new Client
+                {
+                    ClientName = "adminClient",
+                    ClientId = "adminclient",
+                    AllowedGrantTypes = GrantTypes.Code,
+                    RedirectUris = new List<string>{ "https://localhost:26941/signin-oidc"},
+                    AllowedScopes = {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile
+                    },
+                    ClientSecrets = { new Secret("123456".Sha512())},
+                    RequireConsent = true,
+                    RequirePkce = false
+                }
+            };
 
         public static IEnumerable<ApiResource> ApiResources =>
             new ApiResource[]

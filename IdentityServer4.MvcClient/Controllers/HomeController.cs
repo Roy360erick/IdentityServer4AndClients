@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using IdentityServer4.MvcClient.Models;
 using System.Net.Http;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IdentityServer4.MvcClient.Controllers
 {
@@ -38,6 +39,7 @@ namespace IdentityServer4.MvcClient.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [Authorize]
         public async Task<IActionResult> Usuario()
         {
             var httpClient = _clientFactory.CreateClient("IdentityClient");
