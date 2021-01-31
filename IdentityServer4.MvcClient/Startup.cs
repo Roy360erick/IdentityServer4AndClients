@@ -51,7 +51,7 @@ namespace IdentityServer4.MvcClient
                    opt.ResponseType = OpenIdConnectResponseType.Code;
                    opt.SaveTokens = true;
                    opt.ClientSecret = "123456";
-                   opt.UsePkce = false;
+                   //opt.UsePkce = false;
                 });
 
 

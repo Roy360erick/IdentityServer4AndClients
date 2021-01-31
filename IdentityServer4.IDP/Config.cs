@@ -35,7 +35,8 @@ namespace IdentityServer4.IDP
                     },
                     ClientSecrets = { new Secret("123456".Sha512())},
                     RequireConsent = true,
-                    RequirePkce = false
+                    //RequirePkce = false
+                    PostLogoutRedirectUris = new List<string>{ "https://localhost:26941/signout-callback-oidc" }
                 }
             };
 
