@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4.MvcClient",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4.IDP", "IdentityServer4.IDP\IdentityServer4.IDP.csproj", "{1BB8867F-968A-46AB-8709-AA2945C4EF42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularClient", "AngularClient\AngularClient.csproj", "{1FEA6DA1-C408-4CFC-9DB0-098E4E905055}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1BB8867F-968A-46AB-8709-AA2945C4EF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BB8867F-968A-46AB-8709-AA2945C4EF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BB8867F-968A-46AB-8709-AA2945C4EF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FEA6DA1-C408-4CFC-9DB0-098E4E905055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FEA6DA1-C408-4CFC-9DB0-098E4E905055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FEA6DA1-C408-4CFC-9DB0-098E4E905055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FEA6DA1-C408-4CFC-9DB0-098E4E905055}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
